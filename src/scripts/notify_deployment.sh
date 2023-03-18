@@ -16,7 +16,7 @@ generate_json_payload_deployment () {
   echo {} | jq \
   --arg time_str "$(date +%s)" \
   --arg lastUpdated "${iso_time}" \
-  --arg category "${ENVIRONMENT_TYPE^^}" \
+#  --arg category "${ENVIRONMENT_TYPE^^}" \
   --arg environmentName "${ENVIRONMENT_NAME}" \
   --arg environmentType "${ENVIRONMENT_TYPE}" \
   --arg workflowId "${CIRCLE_WORKFLOW_ID}" \
